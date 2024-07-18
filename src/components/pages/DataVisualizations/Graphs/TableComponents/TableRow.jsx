@@ -16,6 +16,7 @@ function TableRow(props) {
         overflow: 'hidden',
       }}
     >
+       
       {columns.map((property, idx) => {
         if (row) {
           if (typeof row[property] === 'object') {

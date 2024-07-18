@@ -84,7 +84,9 @@ import { useHistory } from 'react-router-dom';
         <Button
           type = "default"
           style = {{backgroundColor: '#404C4A', color: '#FFFFFF'}}
-          onClick = {() => console.log('Download Data Clicked!')}
+          onClick = {() =>
+            (window.location.href = 'https://humanrightsfirst.org/wp-content/uploads/2022/10/COW2021001887-I589Data.csv')
+          }
           className = "download-data-btn page-button"
         >
           Download the Data
@@ -144,7 +146,7 @@ import { useHistory } from 'react-router-dom';
         type = "default"
         style = {{backgroundColor: '#404C4A', color: '#FFFFFF'}}
         onClick = {() => 
-         (window.location.href= 'https://humanrightsfirst.org/library/uscis-records-reveal-systemic-disparities-in-asylum-decisions/')
+         (window.location.href = 'https://humanrightsfirst.org/library/uscis-records-reveal-systemic-disparities-in-asylum-decisions/')
         }
       >
         Read More
