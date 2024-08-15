@@ -2,7 +2,7 @@ import { Button, Space, Typography, Layout, Image } from 'antd';
 import React from 'react';
 import Logo from '../../styles/Images/WhiteLogo.png';
 import { colors } from '../../styles/data_vis_colors';
-
+import '../../styles/Footer.less';
 import '../../styles/RenderLandingPage.less';
 const { Text } = Typography;
 const { primary_accent_color } = colors;
@@ -49,7 +49,7 @@ function SubFooter() {
     <Footer
       style={{
         backgroundColor: primary_accent_color,
-        marginLeft: '-7px',
+        marginLeft: '-20px',
       }}
     >
       <Space direction="horizontal">
@@ -61,6 +61,7 @@ function SubFooter() {
               size="small"
               href={text_link_pair[1]}
               style={{ color: 'white' }}
+              className="footer-buttons"
             >
               {text_link_pair[0]}
             </Button>

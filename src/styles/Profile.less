@@ -1,0 +1,115 @@
+@mobile-small: ~"(max-width: 375px)";
+@mobile-medium: ~"(min-width: 376px) and (max-width: 414px)";
+@mobile-large: ~"(min-width: 415px) and (max-width: 480px)";
+@tablet-small: ~"(min-width: 481px) and (max-width: 768px)";
+@tablet-large: ~"(min-width: 769px) and (max-width: 1024px)";
+@laptop: ~"(min-width: 1025px) and (max-width: 1280px)";
+
+.profile-background {
+    display: flex;
+    margin: 3% 15%;
+    .profile-img {
+        border-radius: 999px;
+    }
+    .profile-info {
+        padding-top: 2%;
+        margin-left: 5%;
+        h2 {
+            font-size: 2rem;
+            margin: 0;
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+}
+.profile-raw-background {
+        display: flex;
+        justify-content: center;
+    .profile-raw-card {
+        display: flex;
+        justify-content: center;
+        overflow-x:auto;
+        width: 80%;
+        background-color: black;
+        border-radius: 10px;
+        margin-bottom: 3%;
+        box-shadow: 3px 3px 5px 3px gray;
+        #profile-raw {
+            padding: 3% 5%;
+            color: rgb(119, 183, 23);
+        }
+    }
+}
+
+@media @tablet-small { // 481px-768px
+    #profile-raw {
+        white-space:pre-wrap;
+    }
+}
+
+@media @mobile-large { // 415px-480px
+    .profile-background {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 0;
+        .profile-img {
+            width: 200px;
+            margin: 15% 0 0 0;
+        }
+        .profile-info {
+            margin: 10% 0;
+        }
+    }
+    .profile-raw-background {
+        margin: 0 0 8% 0;
+        #profile-raw {
+            white-space:pre-wrap;
+        }
+    }
+}
+
+@media @mobile-medium { // 376px-414px
+    .profile-background {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 0;
+        .profile-img {
+            width: 200px;
+            margin: 15% 0 0 0;
+        }
+        .profile-info {
+            margin: 10% 0;
+        }
+    }
+    .profile-raw-background {
+        margin: 0 0 8% 0;
+        #profile-raw {
+            white-space:pre-wrap;
+        }
+    }
+}
+
+@media @mobile-small { // 0px-375px
+    .profile-background {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 0;
+        .profile-img {
+            width: 200px;
+            margin: 15% 0 0 0;
+        }
+        .profile-info {
+            margin: 10% 0;
+        }
+    }
+    .profile-raw-background {
+        margin: 0 0 8% 0;
+        #profile-raw {
+            white-space:pre-wrap;
+        }
+    }
+}

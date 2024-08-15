@@ -1,0 +1,85 @@
+@mobile-small: ~"(max-width: 375px)";
+@mobile-medium: ~"(min-width: 376px) and (max-width: 414px)";
+@mobile-large: ~"(min-width: 415px) and (max-width: 480px)";
+@tablet-small: ~"(min-width: 481px) and (max-width: 768px)";
+@tablet-large: ~"(min-width: 769px) and (max-width: 1024px)";
+@laptop: ~"(min-width: 1025px) and (max-width: 1280px)";
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+
+    #hrf-logo {
+        width: 100px;
+    }
+    .links {
+        display: flex;
+        align-items: center;
+        padding: 0 0 0 20px;
+
+        .nav-links {
+            color: #E2F0F7;
+            margin: 0 20px 0 20px;
+            padding: 0;
+        }
+    }
+}
+
+@media @tablet-small { // 481px-768px
+    .header-container .links .nav-links {
+        margin: 0 10px 0 10px;
+    }
+}
+
+@media @mobile-large { // 415px-480px
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        #hrf-logo {
+            width: 40%;
+        }
+        .links {
+            margin: 15px 0 0 0;
+        }
+    }
+}
+
+@media @mobile-medium { // 376px-414px
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        #hrf-logo {
+            width: 60%;
+        }
+        .links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-left: 0;
+            .nav-links {
+                margin: 5% 0 5% 0;
+            }
+        }
+    }
+}
+
+@media @mobile-small { // 0px-375px
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        #hrf-logo {
+            width: 70%;
+        }
+        .links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-left: 0;
+            .nav-links {
+                margin: 5% 0 5% 0;
+            }
+        }
+    }
+}

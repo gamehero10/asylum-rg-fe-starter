@@ -83,7 +83,7 @@ function GraphWrapper(props) {
         // Prepare the combined data for state update
         const combinedData = [fiscalData.data];
 
-        // Call the callback function to update the state with the new date
+        // Call the callback function to update the state with the new data
         stateSettingCallback(view, office, combinedData);
     
       } else {

@@ -1,0 +1,34 @@
+@mobile-small: ~"(max-width: 375px)";
+@mobile-medium: ~"(min-width: 376px) and (max-width: 414px)";
+@mobile-large: ~"(min-width: 415px) and (max-width: 480px)";
+@tablet-small: ~"(min-width: 481px) and (max-width: 768px)";
+@tablet-large: ~"(min-width: 769px) and (max-width: 1024px)";
+@laptop: ~"(min-width: 1025px) and (max-width: 1280px)";
+
+.nav-buttons {
+    background: none;
+    color: #E2F0F7;
+    border: none;
+    padding: 0;
+    margin: 0 20px 0 20px;
+    font: inherit;
+    cursor: pointer;
+}
+
+@media @tablet-small { // 481px-768px
+    .nav-buttons {
+        margin: 0 10px 0 10px;
+    }
+}
+
+@media @mobile-medium { // 376px-414px
+    .nav-buttons {
+        margin: 5% 0 5% 0;
+    }
+}
+
+@media @mobile-small { // 0px-375px
+    .nav-buttons {
+        margin: 5% 0 5% 0;
+    }
+}
